@@ -1,0 +1,239 @@
+/* Reset de box-sizing: hace que el padding y border se incluyan en el ancho/alto */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Valores base opcionales */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.15;
+  background-color: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* GENERAL CSS STYLES */
+
+.container-peak {
+  padding: 0px 36px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.peak-button {
+  background-color: #0597ff;
+  padding: 12px 24px;
+  border-radius: 54px;
+}
+
+/*HEADER */
+
+.wrapper-menu {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.wrapper-her {
+  height: 100vh;
+}
+
+
+
+/*INFO */
+
+
+/* PEAK ADS SECTION */
+
+.peak-ads-section {
+  padding: 80px 0;
+}
+
+.peak-ads-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.peak-ads-pretitle {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 16px;
+}
+
+.peak-ads-pretitle span {
+  color: white;
+  font-weight: 500;
+}
+
+.peak-ads-title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.peak-ads-title span {
+  color: #0597ff;
+}
+
+.peak-ads-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.peak-ads-description.muted {
+  color: #b0b0b0;
+}
+
+.peak-ads-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.peak-ads-card {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+}
+
+.peak-ads-card strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.peak-ads-card p {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin: 0;
+}
+
+.card-icon {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0597ff;
+}
+
+.peak-ads-cta {
+  margin-top: 24px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-ads-title {
+    font-size: 40px;
+  }
+
+  .peak-ads-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+
+/* CARDS */
+
+/* PEAK METHOD SECTION */
+
+.peak-method-section {
+  padding: 80px 0;
+}
+
+.peak-method-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.peak-method-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.peak-method-description {
+  font-size: 15px;
+  color: #bdbdbd;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.peak-method-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.peak-method-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.peak-method-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.peak-method-item strong {
+  font-weight: 600;
+}
+
+.peak-method-item .muted {
+  color: #a0a0a0;
+}
+
+.peak-check {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  background: #18c964;
+  color: #0b0b0b;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-method-title {
+    font-size: 34px;
+  }
+
+  .peak-method-wrapper {
+    max-width: 820px;
+  }
+}
+
