@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "inter", sans-serif;
 }
 
 /* Valores base opcionales */
@@ -25,6 +26,9 @@ body {
 
 .container-peak {
   padding: 0px 36px;
+  position: relative;
+  max-width: 1500px; 
+  margin: 0 auto;
 }
 
 a {
@@ -34,8 +38,12 @@ a {
 
 .peak-button {
   background-color: #0597ff;
-  padding: 12px 24px;
+  padding: 24px;
+  font-weight: bold;
   border-radius: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*HEADER */
@@ -48,40 +56,57 @@ a {
   padding: 20px 0;
 }
 
-.wrapper-her {
-  height: 100vh;
+
+
+.image-hero img {
+  width: 100%;
+  height: auto;
 }
 
-
+.hero-button-mobile {
+  margin-top: 54px;
+  padding-bottom: 10px;
+}
 
 /*INFO */
 
-
 /* PEAK ADS SECTION */
+
+.hero-section {
+  position: relative; 
+  overflow: hidden;
+}
 
 .peak-ads-section {
   padding: 80px 0;
 }
 
 .peak-ads-wrapper {
-  max-width: 720px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: left;
 }
 
 .peak-ads-pretitle {
-  font-size: 14px;
-  color: #bdbdbd;
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+}
+.peak-ads-pretitle p {
+  margin-left: 16px;
 }
 
 .peak-ads-pretitle span {
-  color: white;
-  font-weight: 500;
+  border-radius: 64px;
+  border: 0.4px solid #fff;
+  background: var(--Gris, #2e2e2e);
+  padding: 24px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .peak-ads-title {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -93,12 +118,12 @@ a {
 .peak-ads-description {
   font-size: 16px;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
 .peak-ads-description.muted {
-  color: #b0b0b0;
+  color: #ffffff;
 }
 
 .peak-ads-cards {
@@ -113,7 +138,7 @@ a {
   border: 1px solid #1f1f1f;
   border-radius: 16px;
   padding: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .peak-ads-card strong {
@@ -130,7 +155,7 @@ a {
 
 .card-icon {
   display: inline-block;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 8px;
   color: #0597ff;
 }
@@ -151,9 +176,6 @@ a {
   }
 }
 
-
-
-
 /* CARDS */
 
 /* PEAK METHOD SECTION */
@@ -162,10 +184,6 @@ a {
   padding: 80px 0;
 }
 
-.peak-method-wrapper {
-  max-width: 720px;
-  margin: 0 auto;
-}
 
 .peak-method-title {
   font-size: 28px;
@@ -189,11 +207,13 @@ a {
 .peak-method-item {
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: unset;
   background: #111;
   border: 1px solid #1f1f1f;
   border-radius: 16px;
   padding: 18px 20px;
+  height: 100px;
 }
 
 .peak-method-item p {
@@ -225,6 +245,10 @@ a {
   font-weight: bold;
 }
 
+.peak-method-wrapper {
+  margin: 54px 0px;
+}
+
 /* DESKTOP */
 
 @media (min-width: 768px) {
@@ -232,8 +256,483 @@ a {
     font-size: 34px;
   }
 
-  .peak-method-wrapper {
-    max-width: 820px;
+}
+
+/*slider/*
+
+/* PEAK SCENARIOS SECTION */
+
+.peak-scenarios-section {
+  padding: 80px 0;
+}
+
+.peak-scenarios-wrapper {
+  max-width: 100%;
+  margin-top: 64px;
+}
+
+.peak-scenarios-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+
+.peak-scenarios-swiper {
+  padding-bottom: 40px;
+}
+
+.peak-scenario-card {
+  height: 150px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #111;
+  overflow: hidden;
+}
+
+/* Overlay oscuro */
+.peak-scenario-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+}
+
+.peak-scenario-card p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pagination dots */
+.peak-scenarios-swiper .swiper-pagination-bullet {
+  background: #555;
+  opacity: 1;
+}
+
+.peak-scenarios-swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* Footer text */
+.peak-scenarios-footer {
+  margin-top: 32px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 720px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-scenarios-title {
+    font-size: 36px;
+  }
+
+  .peak-scenario-card {
+    height: 240px;
   }
 }
 
+/*CARDS */
+
+/* PEAK PROCESS SECTION */
+
+.peak-process-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Fondo decorativo detrás */
+.peak-process-bg {
+  background-color: #2E2E2E;
+  padding: 32px 0px;
+  margin: 54px 0px;
+}
+
+.peak-process-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.peak-process-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+
+.peak-process-card {
+  border-radius: 32px;
+  overflow: hidden;
+  background: #0b0b0b;
+  border: 1px solid #1f1f1f;
+}
+
+/* Imagen superior */
+.peak-process-image {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Bloque azul inferior */
+.peak-process-content {
+  background: linear-gradient(135deg, #0597ff, #0077cc);
+  padding: 32px;
+}
+
+.peak-process-step {
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.peak-process-content h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.peak-process-content p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Swiper spacing */
+.peak-process-swiper {
+  padding-bottom: 40px;
+}
+
+.peak-process-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.peak-process-swiper .swiper-pagination-bullet-active {
+  background: white;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-process-title {
+    font-size: 38px;
+  }
+
+  .peak-process-image {
+    height: 320px;
+  }
+}
+
+/* PEAK PROMISE SECTION */
+
+.peak-promise-section {
+  padding: 100px 0;
+  margin-top: 54px;
+}
+
+/* Fondo azul con textura */
+.peak-promise-bg {
+  background: linear-gradient(
+      135deg,
+      rgba(5, 151, 255, 0.95),
+      rgba(0, 120, 215, 0.95)
+    ),
+    radial-gradient(at top left, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(at bottom right, rgba(0, 0, 0, 0.25), transparent 60%);
+
+  padding: 64px 24px;
+}
+
+.peak-promise-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Eyebrow */
+.peak-promise-eyebrow {
+  display: block;
+  font-size: 18<svg xmlns= "http://www.w3.org/2000/svg" width= "15" height= "16"
+    viewBox= "0 0 15 16" fill= "none" > <path d=
+    "M14.7253 8.62553C15.0916 8.12329 15.0916 7.30764 14.7253 6.8054L10.0376 0.376683C9.67137 -0.125561 9.07662 -0.125561 8.71039 0.376683C8.34416 0.878926 8.34416 1.69457 8.71039 2.19681L11.7984 6.43173H0.937546C0.418966 6.43173 0 7.0063 0 7.71748C0 8.42865 0.418966 9.00322 0.937546 9.00322H11.7984L8.71039 13.2381C8.34416 13.7404 8.34416 14.556 8.71039 15.0583C9.07662 15.5605 9.67137 15.5605 10.0376 15.0583L14.7253 8.62955V8.62553Z"
+    fill= "#2E2E2E" / > </svg>px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+/* Title */
+.peak-promise-title {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+/* Text */
+.peak-promise-text {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 24px;
+}
+
+/* Highlight line */
+.peak-promise-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* CTA Button */
+.peak-promise-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #111;
+  padding: 18px 32px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.peak-promise-button span {
+  font-size: 20px;
+}
+
+/* Hover */
+.peak-promise-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-promise-bg {
+    padding: 80px 72px;
+  }
+
+  .peak-promise-title {
+    font-size: 38px;
+  }
+}
+
+/* PEAK BRANDS SECTION */
+
+.peak-brands-section {
+  margin: 54px 0px;
+  overflow: hidden;
+}
+
+.peak-brands-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin: 54px auto;
+  padding: 0px 36px;
+}
+.peak-brand-wrapper {
+
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Marquee wrapper */
+.peak-brands-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track animado */
+.peak-brands-track {
+  display: flex;
+  width: max-content;
+  animation: peak-marquee 25s linear infinite;
+}
+
+/* Logo */
+.peak-brand-logo {
+  flex: 0 0 auto;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peak-brand-logo img {
+  max-height: 60px;
+  width: 154px;
+  height: 154px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.peak-brand-logo img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Animación infinita */
+@keyframes peak-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .peak-brands-title {
+    font-size: 36px;
+  }
+
+  .peak-brand-logo img {
+    max-height: 70px;
+  }
+}
+
+/* PEAK IMPACT SECTION */
+
+.peak-impact-section {
+  padding: 100px 0;
+}
+
+.peak-impact-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.peak-impact-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  max-width: 720px;
+}
+
+.peak-impact-subtitle {
+  font-size: 16px;
+  color: #bdbdbd;
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+
+/* Swiper */
+.peak-impact-swiper {
+  padding: 40px 0 60px;
+}
+
+/* Card base */
+.peak-impact-card {
+  background: #0b0b0b;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid #0597ff;
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.4;
+}
+
+/* Imagen */
+.peak-impact-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Contenido */
+.peak-impact-content {
+  padding: 24px;
+}
+
+.peak-impact-content h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.peak-impact-content p {
+  font-size: 14px;
+  color: #d0d0d0;
+  margin-bottom: 16px;
+}
+
+.peak-impact-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.peak-impact-content li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* SLIDE ACTIVO = ZOOM */
+.swiper-slide-active .peak-impact-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* CTA */
+.peak-impact-cta {
+  margin-top: 40px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .peak-impact-title {
+    font-size: 38px;
+  }
+
+  .peak-impact-card {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+.highlight {
+  background-color: #0597ff;
+  padding: 2px;
+}
+
+h2.peak-cta-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 36px */
+}
+
+.peak-cta-wrapper {
+  margin: 64px 0px;
+}
+
+/* MEDIAQUERIES */
+@media (min-width: 768px) {
+  .peak-method-list {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

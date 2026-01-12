@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peak Ads</title>
+
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div class="container-peak">
@@ -55,72 +73,527 @@
       </div>
     </header>
 
-    <section class="container-peak bg-hero">
-      <div class="wrapper-hero">
+    <section class="hero-section">
+      <div>
+        <img
+          src="/assets/bg.png"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+          "
+          alt=""
+        />
+      </div>
+      <div class="wrapper-hero container-peak">
         <div class="text-hero-wrapper">
-          <h1>El siguiente nivel de tu e-commerce empieza aquí</h1>
+          <h1>
+            El <span class="highlight">siguiente nivel</span> de tu e-commerce
+            empieza aquí
+          </h1>
           <p>
             Estrategias comprobadas de Google Ads que convierten tráfico en
             ventas reales y rentables.
           </p>
         </div>
-        <div class="image-hero"></div>
+        <div class="image-hero">
+          <img src="/assets/cover-hero.png" alt="Hero Image" />
+        </div>
         <div class="hero-button-mobile">
-          <a class="peak-button" href="">AGENDAR DIAGNÓSTICO GRATUITO</a>
+          <a class="peak-button" href=""
+            >AGENDAR DIAGNÓSTICO GRATUITO
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              fill="none"
+            >
+              <path
+                d="M14.7253 8.62553C15.0916 8.12329 15.0916 7.30764 14.7253 6.8054L10.0376 0.376683C9.67137 -0.125561 9.07662 -0.125561 8.71039 0.376683C8.34416 0.878926 8.34416 1.69457 8.71039 2.19681L11.7984 6.43173H0.937546C0.418966 6.43173 0 7.0063 0 7.71748C0 8.42865 0.418966 9.00322 0.937546 9.00322H11.7984L8.71039 13.2381C8.34416 13.7404 8.34416 14.556 8.71039 15.0583C9.07662 15.5605 9.67137 15.5605 10.0376 15.0583L14.7253 8.62955V8.62553Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="container-peak">
       <div class="peak-ads-wrapper">
-        <p class="peak-ads-pretitle">
-          Seguramente has oído:
-          <span>“Google Ads no funciona”</span>
-        </p>
+        <div class="peak-ads-pretitle">
+          <p>Seguramente has oído:</p>
+          <span class="bg-pretitle">“Google Ads no funciona”</span>
+        </div>
 
         <h2 class="peak-ads-title">
           El problema no es <span>Google</span>, sino tu estrategia…
         </h2>
 
         <p class="peak-ads-description">
-          En Peak Ads ayudamos a tu e-commerce a dejar atrás la improvisación y
-          construir crecimiento real.
+          En <strong>Peak Ads</strong> ayudamos a tu e-commerce a dejar atrás la
+          improvisación y construir crecimiento real.
         </p>
 
         <p class="peak-ads-description muted">
           No somos una agencia tradicional de anuncios: somos especialistas en
-          convertir Google Ads en un sistema de ventas predecible, rentable y
-          escalable.
+          convertir <strong>Google Ads</strong> en un sistema de ventas
+          predecible, rentable y escalable.
         </p>
 
         <div class="peak-ads-cards">
           <div class="peak-ads-card">
-            <span class="card-icon">$</span>
+            <span class="card-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="37"
+                viewBox="0 0 21 37"
+                fill="none"
+              >
+                <path
+                  d="M12.1063 16.0436V7.89573C13.8493 8.18973 15.4928 8.90494 16.8979 9.97897C17.178 10.1711 17.5066 10.2753 17.8469 10.2799C18.9371 10.2799 19.826 9.40257 19.8375 8.31235C19.8398 7.84481 19.657 7.39574 19.3283 7.06242C17.2983 5.32404 14.7521 4.29864 12.0832 4.14587V1.41446C12.0832 0.634361 11.4513 0.00244911 10.6712 0.00244911C10.655 0.000157234 10.6388 0.000157234 10.6226 0.000157234C9.83095 -0.0114454 9.17819 0.620538 9.16659 1.41446V4.05326C3.95845 4.42361 0.416935 7.64112 0.416935 11.9233C0.416935 17.1777 4.88437 18.6361 9.16659 19.7934V29.0524C6.90738 28.7491 4.77787 27.8117 3.03253 26.3442C2.70386 26.0826 2.29641 25.9368 1.87514 25.9275C0.808057 26.0016 -0.013651 26.8951 0.000171847 27.9645C-0.00212003 28.4321 0.180728 28.8811 0.509397 29.2144C2.90054 31.3672 5.97451 32.6056 9.18965 32.7097V35.2559C9.18965 35.2721 9.19194 35.2883 9.19194 35.3045C9.22897 36.0961 9.90257 36.7072 10.6942 36.6679C11.4743 36.6679 12.1062 36.036 12.1062 35.2559V32.6634C18.4254 32.2468 20.9716 28.4043 20.9716 24.3304C20.9717 18.8676 16.3886 17.2009 12.1063 16.0436ZM9.18979 15.3028C6.66673 14.5621 4.69923 13.7983 4.69923 11.6456C4.69923 9.49288 6.48159 7.942 9.18979 7.73372V15.3028ZM12.1063 29.0986V20.6731C14.722 21.4138 16.7589 22.4091 16.7358 24.8395C16.7358 26.5988 15.5321 28.682 12.1063 29.0986Z"
+                  fill="#0597FF"
+                />
+              </svg>
+            </span>
             <strong>+150 M</strong>
             <p>En ventas totales</p>
           </div>
 
           <div class="peak-ads-card">
-            <span class="card-icon">▲</span>
+            <span class="card-icon">
+              <img src="/assets/google.png" alt="" />
+            </span>
             <strong>Google Ads</strong>
             <p>Estrategia que funciona</p>
           </div>
 
           <div class="peak-ads-card">
-            <span class="card-icon">📈</span>
+            <span class="card-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="34"
+                viewBox="0 0 36 34"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.549015 33.3801H5.27405C5.41944 33.3794 5.55869 33.3214 5.6615 33.2186C5.76431 33.1158 5.82238 32.9765 5.82306 32.8311V24.7263C5.82312 24.6542 5.80897 24.5827 5.7814 24.5161C5.75383 24.4495 5.71339 24.3889 5.6624 24.3379C5.61141 24.2869 5.55086 24.2465 5.48422 24.2189C5.41758 24.1914 5.34616 24.1772 5.27405 24.1773H0.549015C0.403407 24.1773 0.263763 24.2351 0.160803 24.3381C0.0578425 24.441 0 24.5807 0 24.7263V32.8311C0.000792974 32.9765 0.0588901 33.1157 0.161679 33.2184C0.264468 33.3212 0.403652 33.3793 0.549015 33.3801ZM4.68427 19.3672C4.71631 19.432 4.76109 19.4898 4.81593 19.5369C4.87077 19.5841 4.93454 19.6197 5.00345 19.6417C5.05855 19.6571 5.11541 19.6654 5.17262 19.6662C5.25924 19.6664 5.3447 19.6462 5.42214 19.6074L17.2459 13.5717L18.106 15.2535C18.1532 15.3461 18.2258 15.4233 18.3153 15.4763C18.4047 15.5292 18.5073 15.5557 18.6112 15.5526C18.7151 15.5495 18.816 15.517 18.9021 15.4588C18.9883 15.4007 19.0561 15.3193 19.0978 15.2241L21.6342 9.46296C21.6669 9.38822 21.6827 9.30714 21.6803 9.22558C21.6779 9.14401 21.6575 9.06398 21.6204 8.99128C21.5833 8.91857 21.5306 8.855 21.466 8.80515C21.4014 8.75529 21.3265 8.7204 21.2468 8.70299L15.0906 7.37918C14.9892 7.35697 14.8836 7.36404 14.786 7.39957C14.6885 7.43509 14.6031 7.49761 14.5397 7.57983C14.4763 7.66205 14.4377 7.76059 14.4282 7.86395C14.4187 7.96732 14.4387 8.07126 14.486 8.16365L15.346 9.85029L3.52269 15.886C3.39313 15.9528 3.29523 16.0681 3.25033 16.2068C3.20543 16.3454 3.21716 16.4962 3.28297 16.6263L4.68427 19.3671V19.3672ZM29.2608 1.59223e-09C28.0985 -2.70501e-05 26.9622 0.34465 25.9958 0.990438C25.0294 1.63623 24.2762 2.55411 23.8315 3.62801C23.3867 4.7019 23.2705 5.88356 23.4974 7.02353C23.7243 8.1635 24.2842 9.21056 25.1063 10.0323C25.9283 10.854 26.9756 11.4135 28.1157 11.64C29.2557 11.8665 30.4373 11.7498 31.5111 11.3046C32.5848 10.8595 33.5024 10.106 34.1478 9.13929C34.7932 8.17261 35.1375 7.03625 35.137 5.87391C35.135 4.31627 34.5152 2.82301 33.4136 1.7218C32.3119 0.620584 30.8184 0.00136194 29.2608 1.59223e-09ZM30.3478 4.36371C30.3478 4.01069 30.1311 3.7018 29.8095 3.53511V5.39346C30.7497 5.62384 31.4456 6.42801 31.4456 7.38899C31.4456 8.3451 30.7499 9.1492 29.8095 9.37965V9.82085C29.8095 9.96646 29.7516 10.1061 29.6487 10.2091C29.5457 10.312 29.4061 10.3699 29.2605 10.3699C29.1148 10.3699 28.9752 10.312 28.8722 10.2091C28.7693 10.1061 28.7114 9.96646 28.7114 9.82085V9.37965C27.772 9.1492 27.0753 8.3451 27.0753 7.38899C27.0753 7.24338 27.1331 7.10374 27.2361 7.00078C27.3391 6.89782 27.4787 6.83997 27.6243 6.83997C27.7699 6.83997 27.9096 6.89782 28.0125 7.00078C28.1155 7.10374 28.1733 7.24338 28.1733 7.38899C28.1733 7.73707 28.3905 8.04595 28.7116 8.21251V6.35931C27.7722 6.12886 27.0755 5.31989 27.0755 4.36378C27.0755 3.40767 27.7722 2.60357 28.7116 2.37312V1.92704C28.7116 1.78144 28.7695 1.64179 28.8724 1.53883C28.9754 1.43587 29.1151 1.37803 29.2607 1.37803C29.4063 1.37803 29.5459 1.43587 29.6489 1.53883C29.7518 1.64179 29.8097 1.78144 29.8097 1.92704V2.37312C30.7499 2.60357 31.4458 3.40767 31.4458 4.36378C31.4458 4.50939 31.388 4.64903 31.285 4.75199C31.182 4.85495 31.0424 4.91279 30.8968 4.91279C30.7512 4.91279 30.6115 4.85495 30.5086 4.75199C30.4056 4.64903 30.3478 4.50932 30.3478 4.36371ZM28.1733 4.36371C28.1733 4.01069 28.3905 3.7018 28.7116 3.53511V5.19238C28.3905 5.02568 28.1733 4.71673 28.1733 4.36371ZM30.3478 7.38892C30.3478 7.737 30.1311 8.04589 29.8095 8.21244V6.55545C30.1311 6.72701 30.3478 7.03096 30.3478 7.38892ZM31.6236 33.3801C31.7689 33.3793 31.908 33.3212 32.0108 33.2184C32.1135 33.1156 32.1715 32.9764 32.1722 32.8311V13.7875C32.1722 13.642 32.1144 13.5024 32.0116 13.3994C31.9087 13.2965 31.7692 13.2386 31.6236 13.2385H26.8985C26.8264 13.2384 26.755 13.2526 26.6883 13.2801C26.6217 13.3077 26.5612 13.3481 26.5102 13.3991C26.4592 13.4501 26.4187 13.5107 26.3912 13.5773C26.3636 13.644 26.3494 13.7154 26.3495 13.7875V32.8311C26.3502 32.9765 26.4083 33.1158 26.5111 33.2186C26.6139 33.3214 26.7531 33.3794 26.8985 33.3801H31.6236ZM17.5666 17.4304C17.5665 17.3583 17.5807 17.2869 17.6082 17.2202C17.6358 17.1536 17.6762 17.0931 17.7272 17.0421C17.7782 16.9911 17.8388 16.9506 17.9054 16.9231C17.972 16.8955 18.0435 16.8813 18.1156 16.8814H22.8397C22.9118 16.8813 22.9833 16.8955 23.0499 16.9231C23.1165 16.9506 23.1771 16.9911 23.2281 17.0421C23.2791 17.0931 23.3195 17.1536 23.3471 17.2202C23.3746 17.2869 23.3888 17.3583 23.3887 17.4304V32.8311C23.3881 32.9765 23.33 33.1158 23.2272 33.2186C23.1244 33.3214 22.9851 33.3794 22.8397 33.3801H18.1157C17.9703 33.3794 17.831 33.3214 17.7282 33.2186C17.6254 33.1158 17.5673 32.9765 17.5666 32.8311V17.4304H17.5666ZM14.0569 33.3801C14.2023 33.3794 14.3415 33.3214 14.4444 33.2185C14.5472 33.1157 14.6052 32.9765 14.6059 32.8311V21.0783C14.606 21.0062 14.5918 20.9348 14.5643 20.8682C14.5367 20.8015 14.4962 20.741 14.4453 20.69C14.3943 20.639 14.3337 20.5986 14.2671 20.571C14.2004 20.5434 14.129 20.5293 14.0569 20.5293H9.33189C9.18634 20.5294 9.04678 20.5873 8.9439 20.6903C8.84101 20.7932 8.78322 20.9328 8.78322 21.0783V32.8311C8.78395 32.9764 8.84199 33.1156 8.94471 33.2184C9.04744 33.3212 9.18657 33.3793 9.33189 33.3801H14.0569Z"
+                  fill="#0597FF"
+                />
+              </svg>
+            </span>
             <strong>+30 marcas</strong>
             <p>Duplicaron sus ventas</p>
           </div>
 
           <div class="peak-ads-card">
-            <span class="card-icon">⏱</span>
+            <span class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+              >
+                <path
+                  d="M20.3697 30.7469C20.0902 30.8165 19.8052 30.8784 19.5224 30.9305C18.7831 31.0679 18.2943 31.779 18.431 32.519C18.4986 32.883 18.7054 33.1863 18.9861 33.3842C19.2754 33.5879 19.6436 33.6798 20.0188 33.61C20.3556 33.5475 20.695 33.474 21.0281 33.3909C21.7582 33.2092 22.203 32.4695 22.0209 31.7398C21.8391 31.0094 21.1002 30.565 20.3697 30.7469Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M30.4453 12.4844C30.5407 12.7721 30.7229 13.0069 30.9531 13.1691C31.2943 13.4095 31.7408 13.4903 32.167 13.3494C32.8814 13.1122 33.2685 12.3419 33.0321 11.6278C32.9244 11.3023 32.805 10.9757 32.6777 10.6578C32.3982 9.95913 31.6057 9.61897 30.9066 9.89844C30.2083 10.1778 29.868 10.9705 30.1477 11.6694C30.2547 11.9366 30.3548 12.2109 30.4453 12.4844Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M24.797 28.8015C24.5567 28.9602 24.3086 29.1138 24.0587 29.2577C23.4067 29.6338 23.1834 30.4672 23.5593 31.1189C23.6614 31.2961 23.7974 31.441 23.9539 31.5518C24.3742 31.8475 24.945 31.8918 25.4203 31.618C25.7174 31.4466 26.0128 31.2644 26.2991 31.0751C26.9266 30.6605 27.0994 29.8151 26.6845 29.1872C26.2698 28.5592 25.4248 28.3866 24.797 28.8015Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M33.8793 16.2898C33.8496 15.5378 33.2162 14.9525 32.464 14.9818C31.7127 15.0115 31.127 15.6451 31.1565 16.3968C31.1678 16.6843 31.1707 16.976 31.164 17.2631C31.1535 17.7347 31.3841 18.1551 31.7426 18.4077C31.9561 18.5581 32.2153 18.6491 32.4963 18.6555C33.2483 18.6722 33.8715 18.0757 33.8882 17.3233C33.8957 16.9803 33.8928 16.6327 33.8793 16.2898Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M30.2229 25.2173C29.6199 24.7649 28.7667 24.8877 28.3151 25.4896C28.1422 25.7201 27.96 25.9478 27.7735 26.167C27.2861 26.7397 27.3549 27.5998 27.9276 28.0876C27.9602 28.1153 27.9932 28.1407 28.0275 28.1646C28.5968 28.5659 29.388 28.4737 29.8483 27.9336C30.071 27.672 30.2881 27.4 30.4948 27.1247C30.9465 26.5228 30.8242 25.6691 30.2229 25.2173Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M32.2257 20.2921C31.5077 20.0669 30.7431 20.4666 30.5181 21.1846C30.432 21.4589 30.3366 21.7345 30.2335 22.0044C30.0073 22.5986 30.2241 23.2525 30.7209 23.6028C30.8121 23.6669 30.9125 23.7211 31.0215 23.7624C31.7245 24.0306 32.5117 23.6779 32.7797 22.9747C32.902 22.6537 33.0155 22.3258 33.1182 21.9997C33.3429 21.2816 32.9435 20.5172 32.2257 20.2921Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M14.4252 30.9427C13.2071 30.724 12.0386 30.3515 10.9305 29.8321C10.9174 29.8252 10.9057 29.8174 10.8919 29.8112C10.6308 29.6883 10.3701 29.5566 10.1175 29.4191C10.1166 29.4181 10.115 29.4174 10.1136 29.4168C9.65002 29.1615 9.19759 28.8791 8.75805 28.5697C2.34883 24.0548 0.807792 15.1673 5.32293 8.75818C6.30472 7.36504 7.49285 6.20278 8.81743 5.2816C8.83375 5.27023 8.85007 5.25894 8.86624 5.2475C13.5339 2.03138 19.8718 1.81463 24.828 5.11949L23.7635 6.65754C23.4676 7.08564 23.6497 7.39761 24.1677 7.35098L28.7917 6.93702C29.3104 6.89039 29.6206 6.44167 29.4811 5.94072L28.2394 1.46697C28.1004 0.96543 27.7445 0.905398 27.4483 1.33342L26.3813 2.87511C22.7441 0.433514 18.3816 -0.497504 14.0516 0.253343C13.6155 0.328821 13.1855 0.421201 12.7614 0.528736C12.7581 0.529319 12.7555 0.529683 12.7529 0.530266C12.7365 0.534273 12.7199 0.539591 12.7039 0.544035C8.97006 1.50288 5.71234 3.6806 3.38774 6.78774C3.36815 6.81098 3.34796 6.83371 3.32946 6.85899C3.25216 6.9631 3.17544 7.06961 3.10033 7.17613C2.9775 7.35069 2.85641 7.52962 2.74057 7.70855C2.72607 7.73012 2.715 7.75205 2.70232 7.77383C0.784041 10.7464 -0.141221 14.183 0.0174576 17.6816C0.0178219 17.6932 0.0171662 17.7047 0.0174576 17.7165C0.0328301 18.0583 0.0599323 18.4048 0.0967242 18.7459C0.0986913 18.7679 0.103573 18.7888 0.107288 18.8108C0.145319 19.1538 0.193039 19.4976 0.252853 19.8413C0.860758 23.3484 2.51516 26.5043 4.9942 28.9599C4.99996 28.9656 5.00593 28.9719 5.01176 28.9779C5.0138 28.9801 5.01606 28.9813 5.01803 28.9834C5.68407 29.6403 6.40854 30.2479 7.1886 30.7973C9.23001 32.2358 11.5032 33.1866 13.9444 33.6247C14.6851 33.7578 15.3927 33.2647 15.5256 32.5244C15.6584 31.7835 15.1657 31.0754 14.4252 30.9427Z"
+                  fill="#0597FF"
+                />
+                <path
+                  d="M16.11 5.93846C15.5007 5.93846 15.0072 6.43242 15.0072 7.04083V18.0236L25.0518 23.216C25.2134 23.2997 25.3865 23.3391 25.5569 23.3391C25.9558 23.3391 26.3412 23.1219 26.5371 22.7428C26.8165 22.2018 26.605 21.5371 26.064 21.2577L17.2116 16.6811V7.04083C17.2115 6.43242 16.7186 5.93846 16.11 5.93846Z"
+                  fill="#0597FF"
+                />
+              </svg>
+            </span>
             <strong>+4 años</strong>
             <p>Creciendo e-commerce</p>
           </div>
         </div>
 
         <div class="peak-ads-cta">
-          <a href="#" class="peak-button">AGENDA UNA LLAMADA →</a>
+          <a href="#" class="peak-button"
+            >AGENDA UNA LLAMADA
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              fill="none"
+            >
+              <path
+                d="M14.7253 8.62553C15.0916 8.12329 15.0916 7.30764 14.7253 6.8054L10.0376 0.376683C9.67137 -0.125561 9.07662 -0.125561 8.71039 0.376683C8.34416 0.878926 8.34416 1.69457 8.71039 2.19681L11.7984 6.43173H0.937546C0.418966 6.43173 0 7.0063 0 7.71748C0 8.42865 0.418966 9.00322 0.937546 9.00322H11.7984L8.71039 13.2381C8.34416 13.7404 8.34416 14.556 8.71039 15.0583C9.07662 15.5605 9.67137 15.5605 10.0376 15.0583L14.7253 8.62955V8.62553Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-peak">
+      <div class="peak-scenarios-wrapper">
+        <h2 class="peak-scenarios-title">
+          Si alguno de estos escenarios te resulta familiar, es más común de lo
+          que crees…
+        </h2>
+
+        <!-- Swiper -->
+        <div class="swiper peak-scenarios-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div
+                class="peak-scenario-card"
+                style="background-image: url('/assets/grafica.webp')"
+              >
+                <p>“Subo el presupuesto y mi rentabilidad se desploma.”</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div
+                class="peak-scenario-card"
+                style="background-image: url('/assets/grafica.webp')"
+              >
+                <p>“Probé Google Ads y no funcionó, así que lo dejé.”</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div
+                class="peak-scenario-card"
+                style="background-image: url('/assets/grafica.webp')"
+              >
+                <p>“Mis campañas funcionan un mes y al siguiente no.”</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="peak-scenario-card"
+                style="background-image: url('/assets/grafica.webp')"
+              >
+                <p>“Invierto mucho en Google Ads, pero no genero ventas.”</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination dots -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <p class="peak-scenarios-footer">
+          Por eso en <strong>Peak Ads</strong> no improvisamos. <br />
+          Trabajamos con una estrategia avanzada para leer la intención del
+          cliente, segmentar por valor y optimizar por data real.
+        </p>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="peak-process-bg">
+        <div class="container-peak">
+          <h2 class="peak-process-title">
+            De estrategia a resultados: así trabajamos en Peak Ads
+          </h2>
+
+          <!-- Swiper -->
+          <div class="swiper peak-process-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="peak-process-card">
+                  <div
+                    class="peak-process-image"
+                    style="background-image: url('/assets/image-01.png')"
+                  ></div>
+
+                  <div class="peak-process-content">
+                    <h3>1 Diagnóstico y base estratégica</h3>
+                    <p>
+                      Revisamos a fondo tu cuenta, tracking, márgenes y
+                      estructura actual.
+                      <strong>Definimos objetivos claros</strong> y construimos
+                      una base sólida para crecer sin desperdiciar inversión.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 (ejemplo) -->
+              <div class="swiper-slide">
+                <div class="peak-process-card">
+                  <div
+                    class="peak-process-image"
+                    style="background-image: url('/assets/image-02.png')"
+                  ></div>
+
+                  <div class="peak-process-content">
+                    <h3>2 Ejecución y optimización continua</h3>
+                    <p>
+                      Diseñamos campañas basadas en la intención real del
+                      usuario y el margen de cada producto o categoría.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 (ejemplo) -->
+              <div class="swiper-slide">
+                <div class="peak-process-card">
+                  <div
+                    class="peak-process-image"
+                    style="background-image: url('/assets/image-03.png')"
+                  ></div>
+
+                  <div class="peak-process-content">
+                    <h3>3 Optimización del feed & señales de audiencia</h3>
+                    <p>
+                      Optimizamos el feed en Google Merchant Center y utilizamos
+                      la IA de Google (IA Max) junto con señales de audiencia
+                      para mejorar segmentación. Esto permite que Google
+                      entienda mejor qué vender, a quién y cuándo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="peak-process-card">
+                  <div
+                    class="peak-process-image"
+                    style="background-image: url('/assets/image-04.png')"
+                  ></div>
+
+                  <div class="peak-process-content">
+                    <h3>4 Escalamiento controlado</h3>
+                    <p>
+                      Implementamos estrategias de adquisición de nuevos
+                      clientes dentro del ecosistema Google. Escalamos
+                      presupuesto de forma estratégica, cuidando rentabilidad y
+                      estabilidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-peak">
+      <div class="peak-impact-wrapper">
+        <h2 class="peak-impact-title">
+          El impacto de trabajar con una estrategia bien definida
+        </h2>
+
+        <p class="peak-impact-subtitle">
+          Casos reales de crecimiento, rentabilidad y escalamiento en
+          e-commerce.
+        </p>
+
+        <!-- Swiper -->
+        <div class="swiper peak-impact-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="peak-impact-card">
+                <div class="peak-impact-image">
+                  <img src="/assets/resultados 01.png" alt="Caso Google Ads" />
+                </div>
+
+                <div class="peak-impact-content">
+                  <h3>4 meses de una campaña de Youtube Shorts</h3>
+                  <p>Una red muy infravalorada en el E-com en México.</p>
+
+                  <ul>
+                    <li><strong>Gasto:</strong> $38,000.00 MXN</li>
+                    <li>
+                      <strong>Valor de conversión:</strong> $161,000.00 MXN
+                    </li>
+                    <li><strong>ROAS Totales:</strong>4.19</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="peak-impact-card">
+                <div class="peak-impact-image">
+                  <img src="/assets/resultados 02.png" alt="Caso Google Ads" />
+                </div>
+
+                <div class="peak-impact-content">
+                  <h3>Menos de 30 días de esta campaña de YouTube</h3>
+
+                  <ul>
+                    <li><strong>Gasto:</strong> $15,000.00 MXN</li>
+                    <li>
+                      <strong>Valor de conversión:</strong> $93,400.00 MXN
+                    </li>
+                    <li><strong>ROAS Totales:</strong>6.23</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="peak-impact-card">
+                <div class="peak-impact-image">
+                  <img src="/assets/resultados 03.png" alt="Caso Google Ads" />
+                </div>
+
+                <div class="peak-impact-content">
+                  <h3>Una semana de Performance Max bien ejecutado</h3>
+                  <p>Estrategia basada en data real y atribución avanzada.</p>
+
+                  <ul>
+                    <li><strong>Gasto:</strong> $1,117.00 MXN</li>
+                    <li>
+                      <strong>Valor de conversión:</strong> $43,827.00 MXN
+                    </li>
+                    <li><strong>ROAS Totales:</strong> 39</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="peak-impact-card">
+                <div class="peak-impact-image">
+                  <img src="/assets/resultados 04.png" alt="Caso Google Ads" />
+                </div>
+
+                <div class="peak-impact-content">
+                  <h3>
+                    Comenzamos a trabajar con esta marca que ya llevaba 1 año
+                    anunciándose en Google ads (sin hacer campañas Pmax)
+                  </h3>
+                  <p>
+                    En nuestro primer mes, configuramos una pmax aprovechando
+                    toda la data que ya tenía la cuenta.
+                  </p>
+
+                  <ul>
+                    <li><strong>Gasto:</strong> $34, 344.00 MXN</li>
+                    <li>
+                      <strong>Valor de conversión:</strong> $523, 686.00 MXN
+                    </li>
+                    <li><strong>Conversiones</strong> 396</li>
+                    <li><strong>ROAS Totales:</strong> 15.25</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="peak-impact-cta">
+          <a href="#" class="peak-button">
+            AGENDAR DIAGNÓSTICO GRATUITO
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              fill="none"
+            >
+              <path
+                d="M14.7253 8.62553C15.0916 8.12329 15.0916 7.30764 14.7253 6.8054L10.0376 0.376683C9.67137 -0.125561 9.07662 -0.125561 8.71039 0.376683C8.34416 0.878926 8.34416 1.69457 8.71039 2.19681L11.7984 6.43173H0.937546C0.418966 6.43173 0 7.0063 0 7.71748C0 8.42865 0.418966 9.00322 0.937546 9.00322H11.7984L8.71039 13.2381C8.34416 13.7404 8.34416 14.556 8.71039 15.0583C9.07662 15.5605 9.67137 15.5605 10.0376 15.0583L14.7253 8.62955V8.62553Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="peak-brands-section">
+      <div class="peak-brand-wrapper">
+        <h2 class="peak-brands-title">
+          Marcas que ya han confiado en nuestro trabajo
+        </h2>
+      </div>
+
+      <div class="peak-brands-marquee">
+        <div class="peak-brands-track">
+          <!-- Set 1 -->
+          <div class="peak-brand-logo">
+            <img src="/assets/logos01.png" alt="Brand 1" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos02.png" alt="Brand 2" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos03.png" alt="Brand 3" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos04.png" alt="Brand 4" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos05.png" alt="Brand 5" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos06.png" alt="Brand 6" />
+          </div>
+
+          <!-- Set 2 (duplicado para loop infinito) -->
+          <div class="peak-brand-logo">
+            <img src="/assets/logos01.png" alt="Brand 1" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos02.png" alt="Brand 2" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos03.png" alt="Brand 3" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos04.png" alt="Brand 4" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos05.png" alt="Brand 5" />
+          </div>
+          <div class="peak-brand-logo">
+            <img src="/assets/logos06.png" alt="Brand 6" />
+          </div>
         </div>
       </div>
     </section>
@@ -128,8 +601,7 @@
     <section class="container-peak">
       <div class="peak-method-wrapper">
         <h2 class="peak-method-title">
-          Una forma distinta de trabajar <br />
-          Google Ads
+          Una forma distinta de trabajar Google Ads
         </h2>
 
         <p class="peak-method-description">
@@ -163,6 +635,65 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="peak-promise-bg">
+        <div class="peak-promise-wrapper">
+          <span class="peak-promise-eyebrow">Nuestra promesa</span>
+
+          <h2 class="peak-promise-title">
+            Si en 90 días no logramos un crecimiento estable y medible en tus
+            ventas provenientes de Google Ads, seguimos trabajando sin costo
+            hasta conseguirlo
+          </h2>
+
+          <p class="peak-promise-text">
+            Porque confiamos en nuestro método, en nuestra experiencia y en la
+            forma en que estructuramos Google Ads para e-commerce.
+          </p>
+
+          <p class="peak-promise-highlight">Empieza a escalar tu e-commerce.</p>
+
+          <a href="#" class="peak-promise-button">
+            AGENDA UNA LLAMADA
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+              >
+                <path
+                  d="M14.7253 8.62553C15.0916 8.12329 15.0916 7.30764 14.7253 6.8054L10.0376 0.376683C9.67137 -0.125561 9.07662 -0.125561 8.71039 0.376683C8.34416 0.878926 8.34416 1.69457 8.71039 2.19681L11.7984 6.43173H0.937546C0.418966 6.43173 0 7.0063 0 7.71748C0 8.42865 0.418966 9.00322 0.937546 9.00322H11.7984L8.71039 13.2381C8.34416 13.7404 8.34416 14.556 8.71039 15.0583C9.07662 15.5605 9.67137 15.5605 10.0376 15.0583L14.7253 8.62955V8.62553Z"
+                  fill="#2E2E2E"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-peak peak-cta-section">
+      <div class="peak-cta-wrapper">
+        <h2 class="peak-cta-title">
+          El <span class="highlight">siguiente nivel</span> de tu e-commerce
+          empieza con una decisión.
+        </h2>
+
+        <p class="peak-cta-description">
+          <strong>Agenda una llamada</strong> con nuestro equipo y construyamos
+          un plan claro para escalar tu e-commerce con Google Ads.
+        </p>
+
+        <p class="peak-cta-description muted">
+          Analizaremos tu situación actual, detectaremos oportunidades reales de
+          crecimiento y te mostraremos cómo convertir Google Ads en un sistema
+          de ventas rentable y escalable.
+        </p>
       </div>
     </section>
   </body>
