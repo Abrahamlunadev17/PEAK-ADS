@@ -22,12 +22,84 @@ body {
   color: white;
 }
 
+/*¨hero desktp*/
+
+.wrapper-hero {
+  display: block;
+}
+
+/* HERO DESKTOP ONLY */
+
+.peak-hero-desktop {
+  display: none;
+}
+
+/* Solo desktop */
+@media (min-width: 1024px) {
+  .wrapper-hero {
+    display: none;
+  }
+  .peak-hero-desktop {
+    display: block;
+    padding: px 0;
+    background-image: url(/assets/desktop-hero.png);
+    background-repeat: no-repeat; /* ⬅️ no se repite */
+    background-position: center; /* ⬅️ ajusta según diseño */
+    background-size: cover;
+  }
+
+  .peak-hero-desktop-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 64px;
+  }
+
+  /* Texto */
+  .peak-hero-desktop-content {
+    max-width: 560px;
+  }
+
+  .peak-hero-title {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+  }
+
+  .peak-hero-title .highlight {
+    background: #0597ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .peak-hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d0d0d0;
+    margin-bottom: 32px;
+  }
+
+  /* Visual */
+  .peak-hero-desktop-visual {
+    position: relative;
+  }
+
+  .peak-hero-dashboard {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 24px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+  }
+}
+
 /* GENERAL CSS STYLES */
 
 .container-peak {
   padding: 0px 36px;
   position: relative;
-  max-width: 1500px; 
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -46,17 +118,28 @@ a {
   justify-content: space-between;
 }
 
+.container-peak-cards {
+  padding-left: 32px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 /*HEADER */
 
 .wrapper-menu {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 32px 0;
+  align-items: center;
 }
-
-
+.button-hedear {
+  border: 1px solid white;
+  padding: 12px 24px;
+  border-radius: 54px;
+  display: none;
+}
 
 .image-hero img {
   width: 100%;
@@ -73,7 +156,7 @@ a {
 /* PEAK ADS SECTION */
 
 .hero-section {
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 
@@ -100,7 +183,7 @@ a {
   border-radius: 64px;
   border: 0.4px solid #fff;
   background: var(--Gris, #2e2e2e);
-  padding: 24px;
+  padding: 18px;
   font-weight: bold;
   font-size: 24px;
 }
@@ -184,7 +267,6 @@ a {
   padding: 80px 0;
 }
 
-
 .peak-method-title {
   font-size: 28px;
   line-height: 1.25;
@@ -255,7 +337,6 @@ a {
   .peak-method-title {
     font-size: 34px;
   }
-
 }
 
 /*slider/*
@@ -358,11 +439,16 @@ a {
 
 /* Fondo decorativo detrás */
 .peak-process-bg {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   padding: 32px 0px;
   margin: 54px 0px;
-}
+  overflow: hidden;
+  position: relative;
 
+  background-image: url(/assets/bg-logo.png);
+  background-repeat: no-repeat; /* ⬅️ evita que se repita */
+  background-position: left top; /* ⬅️ ajústalo según diseño */
+}
 .peak-process-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -373,13 +459,13 @@ a {
   line-height: 1.25;
   margin-bottom: 40px;
   max-width: 720px;
+  padding-right: 32px;
 }
 
 .peak-process-card {
   border-radius: 32px;
   overflow: hidden;
   background: #0b0b0b;
-  border: 1px solid #1f1f1f;
 }
 
 /* Imagen superior */
@@ -448,15 +534,12 @@ a {
 
 /* Fondo azul con textura */
 .peak-promise-bg {
-  background: linear-gradient(
-      135deg,
-      rgba(5, 151, 255, 0.95),
-      rgba(0, 120, 215, 0.95)
-    ),
-    radial-gradient(at top left, rgba(255, 255, 255, 0.15), transparent 60%),
-    radial-gradient(at bottom right, rgba(0, 0, 0, 0.25), transparent 60%);
+  background-image: url("/assets/bg-last.png"); /* ⬅️ IMAGEN PLACEHOLDER */
 
-  padding: 64px 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 36px;
 }
 
 .peak-promise-wrapper {
@@ -549,7 +632,6 @@ a {
   padding: 0px 36px;
 }
 .peak-brand-wrapper {
-
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -629,7 +711,6 @@ a {
   font-size: 28px;
   line-height: 1.25;
   margin-bottom: 12px;
-  max-width: 720px;
 }
 
 .peak-impact-subtitle {
@@ -732,7 +813,82 @@ h2.peak-cta-title {
 /* MEDIAQUERIES */
 @media (min-width: 768px) {
   .peak-method-list {
-   display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .peak-ads-wrapper {
+    margin-top: 94px;
+  }
+  .bg-pretitle {
+    max-width: 400px;
+  }
+
+  .button-hedear {
+  display: block;
+} 
+
+.wrapper-menu {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    align-items: center;
 }
+ 
+}
+
+.wrapper-desktop {
+  max-width: 350px;
+  margin-top: 32px;
+}
+
+/* Swiper container */
+.peak-impact-swiper {
+  perspective: 1200px;
+  padding: 40px 0 60px;
+}
+
+/* Slide */
+.peak-impact-swiper .swiper-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.35;
+}
+
+/* Card */
+.peak-impact-card {
+  border-radius: 28px;
+  overflow: hidden;
+  background: #0b0b0b;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* Slide activo (CENTRO) */
+.peak-impact-swiper .swiper-slide-active {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Slides vecinos */
+.peak-impact-swiper .swiper-slide-prev,
+.peak-impact-swiper .swiper-slide-next {
+  opacity: 0.6;
+  z-index: 2;
+}
+
+/* Slides más lejanos */
+.peak-impact-swiper .swiper-slide-prev-prev,
+.peak-impact-swiper .swiper-slide-next-next {
+  opacity: 0.25;
+  z-index: 1;
+}
+
+
+ .wrapper-desktop-cards {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 32px;
+  }
